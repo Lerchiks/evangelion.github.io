@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'CustomFont'; 
+    src: url('fonts/usuzi.woff') format("woff");
+}
+@font-face {
+    font-family: 'Saira'; 
+    src: url('fonts/saira-thin.woff') format("woff")
+}
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 30px rgb(255, 0, 0); }
+    50% { text-shadow: 0 0 50px rgba(255, 0, 0, 0.488); }
+    100% { text-shadow: 0 0 30px rgb(255, 0, 0); }
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    width: 14vh;
+    height: 5vh;
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--red);
+
+    font-size: 2vh;
+    padding: 10px;
+    font-family: 'CustomFont';
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+}
+button:hover{
+    
+    transform: scale(1.1);
+    background-color: #27ff35;;
+    
+}
+.glowing-text {
+    animation: glowing 5s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root{
+    --red:#ff4d4d;
+    --purp: rgb(195, 178, 237);
+    --white-smoke: #d2c1c1;
+    --grey: #b2aeae;
+}
+
+body {
+    background-color: #121212;
+
+    color: var(--white-smoke);
+    font-family: 'Saira';
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    cursor: default;
+}
+
+section {
+    margin-bottom: 100px;
+
+}
+header {
+    font-family: 'CustomFont';
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+
+    font-size: 60px;
+    color: var(--red);
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-left: 15px;
+    font-family: 'CustomFont';
+    color: var(--red);
+}
+
+h3 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'CustomFont';
+    color: var(--grey);
+}
+
+p {
+    line-height: 1.6;
+    font-size: 25px;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+blockquote {
+    color: #121212;
+    background-color: #706f6f;
+
+    border-left: 10px solid var(--red);
+    padding: 15px;
+
+    font-family: 'CustomFont'; 
+    text-align: center;
+
+    
+    margin-left: 30vh;
+    margin-right: 30vh;
+
+}
+
+hr {
+    border: 10px;
+    background-color: var(--red);
+    color: black;
+    height: 3px;
+   
+    margin-bottom: 15px;
+}
+footer {
+
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;         
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row img{
+    margin: 0 auto;
+    width: 25%;
+    height: auto;
+}
+
+img.float-left {
+    float: right;
+    margin-left: 10px;
+}
+img.float-right {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+    border: solid 2px var(--purp);
+    padding: 5px 5px;
+}
